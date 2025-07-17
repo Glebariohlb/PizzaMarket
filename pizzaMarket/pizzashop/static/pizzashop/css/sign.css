@@ -1,0 +1,39 @@
+body{
+    background-image: url('/static/pizzashop/images/background1.png');
+    background-repeat: no-repeat;
+}
+
+.form{
+    text-align: center;
+    transform: translateY(170%)
+}
+
+label{
+    font-family: 'Roboto';
+    color: #ffffff;
+}
+
+input{
+    border-radius: 8px;
+    height: 20px;
+    weight: 30px;
+    width: 13%;
+}
+
+.button{
+    background-color: #f7e0b5;
+    color: black;
+    border:none;
+    border-radius:10px;
+    padding:15px;
+    min-height:30px;
+    min-width: 120px;
+    transition: all 0.2s ease;
+    transform-origin: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.button:active {
+    transform: scale(0.98) translateY(2px);
+}

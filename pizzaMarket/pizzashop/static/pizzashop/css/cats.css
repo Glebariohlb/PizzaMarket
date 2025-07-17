@@ -1,0 +1,60 @@
+body{
+    background-image: url('/static/pizzashop/images/background1.png');
+    background-repeat: no-repeat;
+}
+
+.homepage{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.menu-item {
+    transition: 1.2s;
+    margin-right: 20px;
+    color: #ffffff;
+    font-family: "Roboto";
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+}
+.menu-item:hover{
+    color: #ffc87c;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.homepage{
+    padding-right: 20px;
+    transition: 1.2s;
+}
+
+.homepage:hover{
+    color: #ffc87c;
+}
+
+ul{
+    color: #ffffff;
+}
+
+.read_post{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 20px;
+    transition: 1.2s;
+}
+
+.read-post:hover{
+    color: #ffc87c;
+}

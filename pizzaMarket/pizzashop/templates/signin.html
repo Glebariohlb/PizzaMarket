@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link type="text/css" href="{% static 'pizzashop/css/sign.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+    <from action="{% url 'home' %}" method="post">
+        {% csrf_token %}
+        <label>Ваше имя: </label></p>
+        <input type="text" name="username"></p>
+        <label>Пароль: </label></p>
+        <input type="password" name="userpassword"></p>
+        <button type="submit" onclick="location.href='home'" class="button">Войти</button></p>
+    </from>
+    </div>
+</body>
+</html>

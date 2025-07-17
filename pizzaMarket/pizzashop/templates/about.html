@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link type="text/css" href="{% static 'pizzashop/css/about.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <navigation class="nav">
+        <a href="{% url 'home' %}" class="homepage">Главная</a>
+        {% for m in menu %}
+        {% if not forloop.last %} {% else %}{% endif %}
+            <a href="{% url m.url_name %}" class="menu-item">{{m.title}}</a>
+        {% endfor %}
+    </navigation>
+</header>
+
+<main>
+    <article>
+        <h1 class="who-are-we">Кто мы такие?</h1>
+    </article>
+
+    <p class="us">Мы поможем вам подобрать пиццу по рецепту. Чтобы вы приготовили шикарную пиццу!!</p>
+</main>
+</body>
+</html>
